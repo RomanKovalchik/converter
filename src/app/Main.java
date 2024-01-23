@@ -15,8 +15,11 @@ try {
     int opcode = sc.nextInt();
     if(opcode == 1){
         System.out.println("Enter the value of miles: ");
+
+
         Double ml = sc.nextDouble();
-        System.out.printf(String.valueOf(ml));
+        Double km = milesToKilometrs(ml);
+        System.out.printf(String.valueOf(km));
     }
     else if (opcode==2){
         System.out.println("Enter the value of kilometres: ");
@@ -41,6 +44,11 @@ catch (Exception e)
 
 
 
-
     }
+
+    public static double milesToKilometrs(double ml){
+
+        return 1.6*ml;
+    }
+
 }
