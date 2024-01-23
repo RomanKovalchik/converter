@@ -1,4 +1,4 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+package app;//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 import java.util.Scanner;
 
@@ -26,10 +26,10 @@ try {
 
 
     }
-
-    else if (opcode != 1 && opcode !=2 ){
-        System.out.println("Invalid code operation has been entered");
+    else {
+        System.out.println("Invalid operation code has been entered!");
     }
+
 
 
 
