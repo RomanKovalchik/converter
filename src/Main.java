@@ -11,19 +11,33 @@ public class Main {
             "For converting from kilometrs into miles enter 2");
 
 Scanner sc = new Scanner(System.in);
-int opcode = sc.nextInt();
-   if(opcode == 1){
-       System.out.println("Enter the value of miles: ");
-       Double ml = sc.nextDouble();
-       System.out.printf(String.valueOf(ml));
-   }
-   else if (opcode==2){
-       System.out.println("Enter the value of kilometres: ");
-       Double km = sc.nextDouble();
-       System.out.printf(String.valueOf(km));
+try {
+    int opcode = sc.nextInt();
+    if(opcode == 1){
+        System.out.println("Enter the value of miles: ");
+        Double ml = sc.nextDouble();
+        System.out.printf(String.valueOf(ml));
+    }
+    else if (opcode==2){
+        System.out.println("Enter the value of kilometres: ");
+        Double km = sc.nextDouble();
+        System.out.printf(String.valueOf(km));
 
-   }
 
+
+    }
+
+    else if (opcode != 1 && opcode !=2 ){
+        System.out.println("Invalid code operation has been entered");
+    }
+
+
+
+}
+catch (Exception e)
+{
+    System.out.println("Invalid value has been entered!");
+}
 
 
 
