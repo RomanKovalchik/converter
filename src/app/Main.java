@@ -19,7 +19,7 @@ try {
 
         Double ml = sc.nextDouble();
         Double km = milesToKilometrs(ml);
-        System.out.printf(String.valueOf(kmgit));
+        System.out.printf(String.valueOf(km));
     }
     else if (opcode==2){
         System.out.println("Enter the value of kilometres: ");
